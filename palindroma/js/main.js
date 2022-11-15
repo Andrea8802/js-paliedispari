@@ -15,17 +15,17 @@ function palindromaCheck(parola){
     // Giriamo le lettere al contrario
     parolaReverse = parolaReverse.reverse();
 
-    // Ciclo per confrontare gli array
-    for (let i = 0; i < parola.length; i++){
+    // Riuniamo le parole
+    parola = parola.join();     
+    parolaReverse = parolaReverse.join();   
+    
+    // Le riconfrontiamo
+    if (parola === parolaReverse){
+        return true;
 
-        // Controlliamo se anche al contrario hanno lo stesso significato
-        if (parola[i] === parolaReverse[i]){
-            return true;
-
-        } else if (parola[i] != parolaReverse[i]){
-            return false;
-        }
-    }      
+    } else{
+        return false;
+    }
 }
 
 // Chiediamo di inserire la parola
