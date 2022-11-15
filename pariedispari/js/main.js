@@ -1,5 +1,8 @@
 // L'utente sceglie pari o dispari e inserisce un numero da 1 a 5, facciamo scegliere al pc un numero, generandolo in maniera casuale da 1 a 5 usando una funzione, sommando i due numeri controlliamo se pari o dispari, sempre con una funzione e stabiliamo chi ha vinto.
 
+// Dichiariamo costanti
+let sceltaUtente = "";
+let numeroUtente = null;
 // Funzioni
 
 // Funzione per generare un numero casuale
@@ -17,10 +20,14 @@ function pariODispari(numero){
 }
 
 // Chiediamo all'utente di scegliere pari o dispari
-const sceltaUtente = prompt('Scegli fra "pari" o "dispari"');
+while (sceltaUtente != "pari" && sceltaUtente != "dispari"){
+    sceltaUtente = prompt('Scegli fra "pari" o "dispari"');
+}
 
 // Chiediamo di scegliere un numero da 1 a 5
-const numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5"))
+while (numeroUtente > 5 || numeroUtente === null){
+    numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5"))
+}
 
 // Generiamo un numero casuale per il pc
 const numeroPC = numeroCasuale(1, 5);
