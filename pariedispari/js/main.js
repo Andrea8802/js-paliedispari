@@ -25,7 +25,7 @@ while (sceltaUtente != "pari" && sceltaUtente != "dispari"){
 }
 
 // Chiediamo di scegliere un numero da 1 a 5
-while (numeroUtente > 5 || numeroUtente === null){
+while (numeroUtente > 5 || numeroUtente < 1){
     numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5"))
 }
 
