@@ -1,6 +1,7 @@
 // Creare una funzione per capire se la parola data dall'utente è palindroma o meno.
 
 // Funzioni
+
 // Funzione per verificare se la parola è palindroma
 function palindromaCheck(parola){
 
