@@ -2,7 +2,7 @@
 
 // Dichiariamo costanti
 let sceltaUtente = "";
-let numeroUtente = null;
+let numeroUtente = 0;
 // Funzioni
 
 // Funzione per generare un numero casuale
